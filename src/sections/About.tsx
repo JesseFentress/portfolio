@@ -28,7 +28,7 @@ export const About: React.FC<any> = () => {
     }, [ref, isVisible]);
 
     return (
-        <Section ref={ref} id="about" className="">
+        <Section ref={ref} id="about">
             <Box className="w-fit mb-4">
                 <Heading as="h2">About Me</Heading>
                 <Box className="w-1/4 border-b-4" style={{borderColor: "var(--iris-a11)"}}></Box>

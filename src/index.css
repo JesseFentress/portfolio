@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 .fade {
-  @apply transition-opacity duration-300 opacity-0;
+    @apply transition-opacity duration-300 opacity-0;
 }
 
 .fade-in {
-  @apply opacity-100;
+    @apply opacity-100;
 }
 
 .fade-top {
-  @apply -translate-y-64 opacity-0 transition-all duration-700;
+    @apply -translate-y-64 opacity-0 transition-all duration-700;
 }
 
 .fade-top-in {
-  @apply translate-y-0 opacity-100;
+    @apply translate-y-0 opacity-100;
 }
 
 .fade-right {
-  @apply -translate-x-64 opacity-0 transition-all;
+    @apply -translate-x-64 opacity-0 transition-all;
 }
 
 .fade-right-in {
-  @apply translate-x-0 opacity-100;
+    @apply translate-x-0 opacity-100;
 }
 
 .animate-b {
-  animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
 
-  /* @keyframes bounce {
+    /* @keyframes bounce {
     0%,
     100% {
       transform: translateY(-25%);
@@ -43,90 +43,104 @@
 }
 
 .animate-a {
-  animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .animate-c {
-  animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
 }
 
 .animate-d {
-  animation: bounce 4s infinite;
+    animation: bounce 4s infinite;
 }
 
 .animate-e {
-  animation: bounce 2.25s infinite;
+    animation: bounce 2.25s infinite;
 }
 .animate-f {
-  animation: bounce 1.5s infinite;
+    animation: bounce 1.5s infinite;
 }
 .animate-g {
-  animation: bounce 1.25s infinite;
+    animation: bounce 1.25s infinite;
 }
 
 .animate-h {
-  animation: bounce 2.5s infinite;
+    animation: bounce 2.5s infinite;
 }
 
 .animate-i {
-  animation: bounce 1.75s infinite;
+    animation: bounce 1.75s infinite;
 }
 
 @keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(-5px);
-    animation-timing-function: cubic-bezier(0, 0, 1, 1);
-  }
-  /* 75% {
+    0%,
+    100% {
+        transform: translateY(-5px);
+        animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+    /* 75% {
     transform: translateX(-1px);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   } */
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 0.2);
-  }
-  /* 25% {
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 0.2);
+    }
+    /* 25% {
     transform: translateX(3px);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   } */
 }
 
 .nav-item > a {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .nav-item.active > a,
 .nav-item:hover > a {
-  color: var(--iris-a11);
-  opacity: 1;
+    color: var(--iris-a11);
+
+    opacity: 1;
 }
 
 .employment-item {
-  @apply rounded p-4 hover:bg-zinc-900 ease-in duration-200;
+    @apply rounded lg:px-4 py-4 hover:bg-zinc-900 ease-in duration-200;
 }
 
 .employment-item:hover {
-  color: var(--iris-a10);
+    color: var(--iris-a10);
 }
 
 section {
-  @apply mb-16 md:mb-24 lg:mb-36;
+    @apply mb-16 md:mb-24 lg:mb-36;
 }
 
 .radix-themes {
-  /* --color-background: #1e2124; */
+    /* --color-background: #1e2124; */
 }
 
 a:hover > .slide-up {
-  @apply transition -translate-y-1;
-  color: var(--iris-a11);
+    @apply transition -translate-y-1;
+    color: var(--iris-a11);
 }
 
 .w:hover {
-  color: var(--iris-a11);
+    color: var(--iris-a11);
+}
+
+.media-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.bg-iris {
+    background: var(--iris-9);
+}
+
+.bg-iris:hover {
+    background: var(--iris-10);
 }

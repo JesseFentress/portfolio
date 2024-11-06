@@ -40,10 +40,10 @@ export const ContactForm: React.FC = () => {
         <form ref={form} onSubmit={sendEmail}>
             <fieldset className="border-0" disabled={isPending}>
                 <Flex direction="column" gap="4">
-                    <TextField.Root placeholder="Your Name"></TextField.Root>
-                    <TextField.Root placeholder="Subject"></TextField.Root>
-                    <TextArea placeholder="Message..." size="3"></TextArea>
-                    <Button className="w-full md:w-32" variant="soft">
+                    <TextField.Root placeholder="Your Name" required></TextField.Root>
+                    <TextField.Root placeholder="Subject" required></TextField.Root>
+                    <TextArea placeholder="Message..." size="3" required></TextArea>
+                    <Button className="w-full md:w-32 cursor-pointer" variant="soft">
                         <Spinner loading={isPending}></Spinner>
                         Send
                     </Button>
