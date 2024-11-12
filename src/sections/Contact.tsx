@@ -1,5 +1,13 @@
 import { EnvelopeClosedIcon, MobileIcon } from "@radix-ui/react-icons";
-import { Box, Flex, Heading, Section, Strong, Text } from "@radix-ui/themes";
+import {
+    Box,
+    Flex,
+    Heading,
+    Link,
+    Section,
+    Strong,
+    Text,
+} from "@radix-ui/themes";
 
 export const ContactSection: React.FC<any> = () => {
     return (
@@ -28,21 +36,23 @@ export const ContactSection: React.FC<any> = () => {
                 >
                     <Flex align="center" gap="4">
                         <MobileIcon color="gray" />
-                        <Text
+                        <Link
+                            href="tel:2157914772"
                             color="gray"
                             className="hover:text-white cursor-pointer"
                         >
                             +1 (215) 791-4772
-                        </Text>
+                        </Link>
                     </Flex>
                     <Flex align="center" gap="4">
                         <EnvelopeClosedIcon color="gray" />
-                        <Text
+                        <Link
+                            href="mailto:jesse.s.fentress@gmail.com"
                             color="gray"
                             className="hover:text-white cursor-pointer"
                         >
                             jesse.s.fentress@gmail.com
-                        </Text>
+                        </Link>
                     </Flex>
                 </Flex>
             </Box>
