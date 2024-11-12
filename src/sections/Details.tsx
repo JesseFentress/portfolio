@@ -21,7 +21,7 @@ export const Details: React.FC = () => {
                 >
                     <Flex gap="4">
                         <Avatar
-                            src="src/assets/headshot.jpg"
+                            src="/headshot.jpg"
                             fallback="Jesse Fentress Headshot"
                             size="7"
                             className="text-center"
