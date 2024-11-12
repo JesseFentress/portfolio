@@ -22,7 +22,10 @@ export const ContactSection: React.FC<any> = () => {
                     </span>{" "}
                     or leave me a message on social media!
                 </Text>
-                <Flex direction="column">
+                <Flex
+                    direction="column"
+                    className="justify-self-center sm:justify-self-auto"
+                >
                     <Flex align="center" gap="4">
                         <MobileIcon color="gray" />
                         <Text
