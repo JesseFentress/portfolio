@@ -1,17 +1,5 @@
 import { Badge, Box, Flex, Grid, Heading, Text } from "@radix-ui/themes";
-
-type Employment = {
-    startDate: string;
-    endDate?: string;
-    position: string;
-    employer: string;
-    description: string;
-    tags: string[];
-};
-
-type EmploymentList = {
-    employmentHistory: Employment[];
-};
+import { Employment } from "../types";
 
 export const ExperienceItem: React.FC<Employment> = ({
     startDate,
@@ -61,12 +49,16 @@ export const ExperienceItem: React.FC<Employment> = ({
     );
 };
 
-export const ExperienceList: React.FC<EmploymentList> = ({
+type ExperienceListProps = {
+    employmentHistory: Employment[];
+};
+
+export const ExperienceList: React.FC<ExperienceListProps> = ({
     employmentHistory,
 }) => {
     return (
         <ol>
-            {employmentHistory.map((item, idx) => (
+            {employmentHistory.map((item: Employment, idx: number) => (
                 <ExperienceItem
                     key={idx}
                     startDate={item.startDate}

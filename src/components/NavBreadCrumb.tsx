@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { BreadCrumbItem } from "./BreacCrumbItem";
+import { BreadCrumbItem } from "./BreadCrumbItem";
 
-export const NavBreadCrumb: React.FC<any> = () => {
+export const NavBreadCrumb: React.FC = () => {
     const [activeSection, setActiveSection] = useState<string>("about"); // Only if using Context
 
     useEffect(() => {
@@ -38,11 +38,6 @@ export const NavBreadCrumb: React.FC<any> = () => {
                     label="experience"
                     section="#experience"
                     active={activeSection == "experience" ? true : false}
-                />
-                <BreadCrumbItem
-                    label="skills"
-                    section="#skills"
-                    active={activeSection == "skills" ? true : false}
                 />
                 <BreadCrumbItem
                     label="contact"

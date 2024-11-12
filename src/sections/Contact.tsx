@@ -1,25 +1,48 @@
-import { Grid, Heading, Section, Strong, Text } from "@radix-ui/themes";
-import { ContactForm } from "../components/ContactForm";
+import { EnvelopeClosedIcon, MobileIcon } from "@radix-ui/react-icons";
+import { Box, Flex, Heading, Section, Strong, Text } from "@radix-ui/themes";
 
 export const ContactSection: React.FC<any> = () => {
     return (
         <Section id="contact">
-            <Heading as="h2" size="9" className="pb-9" color="iris">
-                Reach out...
+            <Heading
+                as="h2"
+                size="9"
+                className="pb-9 uppercase text-iris-10"
+                weight="medium"
+            >
+                Reach out
             </Heading>
-            <Grid columns={{ initial: "1", lg: "auto 1fr" }} gap="5">
+            <Box>
                 <Text color="gray" className="pb-6 hidden sm:block" size={"3"}>
                     Feel free to get in touch via{" "}
                     <span>
                         <Strong className="whitespace-nowrap text-white">
                             one of the links
                         </Strong>
-                        ...
                     </span>{" "}
-                    <br></br>or leave me a message!
+                    or leave me a message on social media!
                 </Text>
-                <ContactForm />
-            </Grid>
+                <Flex direction="column">
+                    <Flex align="center" gap="4">
+                        <MobileIcon color="gray" />
+                        <Text
+                            color="gray"
+                            className="hover:text-white cursor-pointer"
+                        >
+                            +1 (215) 791-4772
+                        </Text>
+                    </Flex>
+                    <Flex align="center" gap="4">
+                        <EnvelopeClosedIcon color="gray" />
+                        <Text
+                            color="gray"
+                            className="hover:text-white cursor-pointer"
+                        >
+                            jesse.s.fentress@gmail.com
+                        </Text>
+                    </Flex>
+                </Flex>
+            </Box>
         </Section>
     );
 };
