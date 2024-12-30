@@ -1,4 +1,4 @@
-import { Avatar, Flex, Grid, Heading } from "@radix-ui/themes";
+import { Flex, Grid, Heading } from "@radix-ui/themes";
 
 export const Details: React.FC = () => {
     return (
@@ -20,12 +20,6 @@ export const Details: React.FC = () => {
                     gap="0"
                 >
                     <Flex gap="4">
-                        <Avatar
-                            src="/headshotme.jpg"
-                            fallback="Jesse Fentress Headshot"
-                            size="7"
-                            className="text-center"
-                        />
                         <Flex direction="column" className="m-auto">
                             <Heading as="h1">Jesse Fentress</Heading>
                             <Heading
